@@ -26,6 +26,7 @@
       height: 6000px; /* высота страницы */
       pointer-events: none;
       z-index: 1;
+      transform: rotate(180deg);
     }
     .rocket {
       width: 40px;
@@ -40,13 +41,10 @@
       border-radius: 1rem;
       transform: scale(0);
       transition: transform 0.5s;
+      transform: rotate(180deg);
     }
     .project.visible {
       transform: scale(1);
-    }
-
-    .project, .svg-container {
-      transform: rotate(180deg);
     }
   </style>
 </head>
