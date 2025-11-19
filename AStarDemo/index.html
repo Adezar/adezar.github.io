@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1500 height=1500 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1024 height=1024 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/AStar Demo.loader.js";
+      var loaderUrl = buildUrl + "/AStarDemo.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/AStar Demo.data.br",
-        frameworkUrl: buildUrl + "/AStar Demo.framework.js.br",
-        codeUrl: buildUrl + "/AStar Demo.wasm.br",
+        dataUrl: buildUrl + "/AStarDemo.data",
+        frameworkUrl: buildUrl + "/AStarDemo.framework.js",
+        codeUrl: buildUrl + "/AStarDemo.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "AStar Demo",
@@ -104,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1500px";
-        canvas.style.height = "1500px";
+        canvas.style.width = "1024px";
+        canvas.style.height = "1024px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
